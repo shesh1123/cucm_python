@@ -41,6 +41,7 @@ def get_pickup_group(dn):
 
 
 #To get pickup group members
+#Thanks to @dstaudt from DevNet for his help with this
 def get_pickup_group_members(pickup_grp):
     sql = '''select numplan.dnorpattern from numplan, pickupgrouplinemap, pickupgroup
             where numplan.pkid = pickupgrouplinemap.fknumplan_line and
